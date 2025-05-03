@@ -1,5 +1,10 @@
 lockfileVersion: '6.0'
 
+dependencies:
+  clsx:
+    specifier: ^2.1.1
+    version: 2.1.1
+
 devDependencies:
   react:
     specifier: ^19.1.0
@@ -9,6 +14,11 @@ devDependencies:
     version: 19.1.0(react@19.1.0)
 
 packages:
+
+  /clsx@2.1.1:
+    resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
+    engines: {node: '>=6'}
+    dev: false
 
   /react-dom@19.1.0(react@19.1.0):
     resolution: {integrity: sha512-Xs1hdnE+DyKgeHJeJznQmYMIBG3TKIHJJT95Q58nHLSrElKlGQqDTR2HQ9fx5CN/Gk6Vh/kupBTDLU11/nDk/g==}
