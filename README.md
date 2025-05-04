@@ -33,3 +33,9 @@ corepack enable
 # 新增 peerDependencies
 pnpm add react --save-peer
 ```
+
+## NPM
+```sh
+# 发布需要指定为 public，应为包名带有 scope (@lmx/rui)
+npm publish --access public
+```
