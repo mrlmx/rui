@@ -3,7 +3,7 @@ import { clsx } from "clsx";
 import { ButtonProps } from "./types";
 
 
-const prefixCls = "rui-button";
+const prefixCls = "rui-btn";
 
 const Button = (props: ButtonProps) => {
   const { children, type = "default", className, style } = props;
