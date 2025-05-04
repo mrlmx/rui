@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "unpkg": "dist/umd/rui.js",
   "types": "dist/esm/index.d.ts",
   "packageManager": "pnpm@10.10.0",
   "scripts": {
@@ -10,8 +11,9 @@
     "build:cjs": "tsc -p tsconfig.build.json --module commonjs --outDir dist/cjs",
     "build:esm:css": "lessc ./components/Button/style/index.less ./dist/esm/Button/style/index.css",
     "build:cjs:css": "lessc ./components/Button/style/index.less ./dist/cjs/Button/style/index.css",
+    "build:umd": "webpack --config webpack.config.js",
     "clean": "rm -rf dist",
-    "build": "npm run clean && npm run build:esm && npm run build:cjs && npm run build:esm:css && npm run build:cjs:css",
+    "build": "npm run clean && npm run build:esm && npm run build:cjs && npm run build:esm:css && npm run build:cjs:css && npm run build:umd",
     "publish": "npm publish --access public"
   },
   "keywords": [],
@@ -29,7 +31,10 @@
     "less": "^4.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "typescript": "^5.8.3"
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.7",
+    "webpack-cli": "^6.0.1"
   },
   "peerDependencies": {
     "react": ">=16.9.0",
