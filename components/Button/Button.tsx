@@ -1,6 +1,7 @@
 import React from "react";
 import { clsx } from "clsx";
 import { ButtonProps } from "./types";
+import "./style/index.less";
 
 
 const prefixCls = "rui-button";
