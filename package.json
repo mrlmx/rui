@@ -1,6 +1,6 @@
 {
   "name": "@lmx/rui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -11,7 +11,8 @@
     "build:esm:css": "lessc ./components/Button/style/index.less ./dist/esm/Button/style/index.css",
     "build:cjs:css": "lessc ./components/Button/style/index.less ./dist/cjs/Button/style/index.css",
     "clean": "rm -rf dist",
-    "build": "npm run clean && npm run build:esm && npm run build:cjs && npm run build:esm:css && npm run build:cjs:css"
+    "build": "npm run clean && npm run build:esm && npm run build:cjs && npm run build:esm:css && npm run build:cjs:css",
+    "publish": "npm publish --access public"
   },
   "keywords": [],
   "author": "",
