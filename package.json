@@ -1,5 +1,5 @@
 {
-  "name": "rui",
+  "name": "@lmx/rui",
   "version": "0.0.4",
   "main": "dist/cjs.js",
   "module": "dist/esm.js",
@@ -12,7 +12,8 @@
   ],
   "packageManager": "pnpm@10.10.0",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "publish": "npm publish --access public"
   },
   "keywords": [],
   "author": "",
